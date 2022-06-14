@@ -1,0 +1,1 @@
+show_debug_message(monkeyGetInput(vk_space,5));

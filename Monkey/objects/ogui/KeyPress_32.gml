@@ -5,5 +5,5 @@
 instance_create_layer(mouse_x, mouse_y, "Instances", oMonkey, {
 	sprite_index: sMonkey,
 	angle_speed: 1,
-	inputType: vk_space
+	inputType: choose(vk_space, vk_control, vk_alt)
 });
