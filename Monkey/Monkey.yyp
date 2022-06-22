@@ -5,7 +5,6 @@
     {"id":{"name":"sDebugWall","path":"sprites/sDebugWall/sDebugWall.yy",},"order":7,},
     {"id":{"name":"MonkeyDependencies","path":"scripts/MonkeyDependencies/MonkeyDependencies.yy",},"order":10,},
     {"id":{"name":"oMonkey","path":"objects/oMonkey/oMonkey.yy",},"order":4,},
-    {"id":{"name":"oGUI","path":"objects/oGUI/oGUI.yy",},"order":3,},
     {"id":{"name":"MonkeyFunctions","path":"scripts/MonkeyFunctions/MonkeyFunctions.yy",},"order":12,},
     {"id":{"name":"oMonkeyGamepad","path":"objects/oMonkeyGamepad/oMonkeyGamepad.yy",},"order":9,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":8,},

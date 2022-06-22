@@ -1,4 +1,1 @@
-
-
-
 status = monkeyGetInputKeyboard(inputType, heldFrames)

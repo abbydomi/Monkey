@@ -20,5 +20,3 @@ switch(monkeyGetInputStatus(vk_space))
 		draw_set_color(c_white)
 	break;
 }
-
-
