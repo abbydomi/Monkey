@@ -4,29 +4,29 @@ function monkey() constructor {
 	inputType = vk_space
 }
 
-function monkeyGetInput(vk_input, gp_input, heldFrames) {
+test = 0;
+monkeyInit();
+
+
+function monkeyGetInputKeyboard(vk_input, heldFrames) {
 	if keyboard_check(vk_input)
 	{
-		var held = 0;
 		var status = 0;
 		if (held < heldFrames)
 		{
 			status = 1
 			held++
-			draw_text(x+6,y,string(vk_input)+"Pressed")
+			show_debug_message(held)
 		} 
 		else 
 		{
 			status = 2
-			draw_text(x+6,y,string(vk_input)+"Held")
 		}
 	} 
 	else 
 	{
 		status = 0
 		held = 0;
-		draw_text(x+6,y,string(vk_input)+"Not pressed")
 	}
-	
 	return status;
 }

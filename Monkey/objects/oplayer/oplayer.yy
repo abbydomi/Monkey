@@ -33,7 +33,7 @@
     "path": "Monkey.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "oMonkey",
+  "name": "oPlayer",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,1 +1,4 @@
-image_angle+=angle_speed
+
+
+
+status = monkeyGetInputKeyboard(inputType, heldFrames)

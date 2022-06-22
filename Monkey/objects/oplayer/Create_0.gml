@@ -1,9 +1,3 @@
-//Using functions
-//instance_create_layer(mouse_x, mouse_y, "Instances", oMonkey, new monkey());
-
-//Using structs
-if test == 0{
-
 var newMonkey = instance_create_layer(mouse_x, mouse_y, "Instances", oMonkey, {
 	sprite_index: sMonkey,
 	angle_speed: 1,
@@ -12,4 +6,3 @@ var newMonkey = instance_create_layer(mouse_x, mouse_y, "Instances", oMonkey, {
 });
 monkeyList[newMonkey.inputType] = newMonkey;
 
-}
