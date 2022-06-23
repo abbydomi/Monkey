@@ -5,9 +5,12 @@
     {"id":{"name":"sDebugWall","path":"sprites/sDebugWall/sDebugWall.yy",},"order":7,},
     {"id":{"name":"MonkeyDependencies","path":"scripts/MonkeyDependencies/MonkeyDependencies.yy",},"order":10,},
     {"id":{"name":"oMonkey","path":"objects/oMonkey/oMonkey.yy",},"order":4,},
+    {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},"order":14,},
     {"id":{"name":"MonkeyFunctions","path":"scripts/MonkeyFunctions/MonkeyFunctions.yy",},"order":12,},
     {"id":{"name":"oMonkeyGamepad","path":"objects/oMonkeyGamepad/oMonkeyGamepad.yy",},"order":9,},
+    {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},"order":15,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":8,},
+    {"id":{"name":"oPlayer2","path":"objects/oPlayer2/oPlayer2.yy",},"order":13,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":6,},
   ],
   "Options": [
@@ -29,6 +32,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [],

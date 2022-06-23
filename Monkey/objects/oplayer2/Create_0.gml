@@ -1,0 +1,1 @@
+monkeyCreateListener(vk_space, 10);

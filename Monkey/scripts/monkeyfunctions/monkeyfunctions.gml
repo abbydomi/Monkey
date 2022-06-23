@@ -1,12 +1,15 @@
 
-function monkeyGetInputStatus(vk_input){
-	return monkeyList[vk_input].status
+function monkeyGetInputStatus(ID){
+	 return monkeyList[ID].status
 }
 
-function monkeyCreateListener(vkInput, heldframes){
-	var newMonkey = instance_create_layer(0, 0, "Instances", oMonkey, {
-	heldFrames: heldframes,
-	inputType: vkInput
-});
-monkeyList[newMonkey.inputType] = newMonkey;
+function monkeyCreateListener(ID, vkInput, gpInput, heldframes){
+	var newMonkey = instance_create_depth(0, 0, 0, oMonkey, {
+		status: MONKEY.OFF,
+		heldFrames: heldframes,
+		inputType: vkInput,
+		gamepadInput: gpInput
+	});
+	monkeyList[ID] = newMonkey;
 }
+

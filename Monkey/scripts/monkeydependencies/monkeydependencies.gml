@@ -2,22 +2,6 @@ function gamepad_anykey(slot) {
 return (gamepad_button_check(slot, gp_face1)||gamepad_button_check(slot, gp_face2)||gamepad_button_check(slot, gp_face3)||gamepad_button_check(slot, gp_face4)||gamepad_button_check(slot, gp_shoulderl)||gamepad_button_check(slot, gp_shoulderr)||gamepad_button_check(slot, gp_shoulderlb)||gamepad_button_check(slot, gp_shoulderrb)||gamepad_button_check(slot, gp_select)||gamepad_button_check(slot, gp_start) )
 }
 
-function monkeyInit()
-{
-	globalvar monkeyList[0]
-	monkeyList[0] = 0;
-	if !instance_exists(oMonkeyGamepad)
-	{
-		instance_create_depth(0,0,0,oMonkeyGamepad);
-	}
-	enum MONKEY
-	{
-		OFF,
-		PRESSED,
-		HELD
-	}
-}
-
 function monkeyGetInputKeyboard(vk_input, heldFrames) {
 	if keyboard_check(vk_input)
 	{
@@ -55,3 +39,43 @@ function monkeyGetInputKeyboard(vk_input, heldFrames) {
 	}
 
 }
+
+function monkeyGetInputGamepad(gp_input, heldFrames) {
+	if gamepad_button_check(global.gamepad_slot, gp_input)
+	{
+		var status = MONKEY.OFF;
+		if (held < heldFrames)
+		{
+			status = MONKEY.PRESSED
+			held++
+			show_debug_message(held)
+		} 
+		else 
+		{
+			status = MONKEY.HELD
+			return status;
+		}
+	} 
+	else 
+	{
+		if (held > 1)
+		{
+			if (held < heldFrames)
+			{
+				held = 0;
+				status = MONKEY.PRESSED
+				return status;
+			}
+		}
+		else
+		{
+			held = 0;
+			status = MONKEY.OFF
+			return status;
+		}
+		held = 0;
+	}
+
+}
+
+

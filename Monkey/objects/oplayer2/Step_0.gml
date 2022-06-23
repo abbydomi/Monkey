@@ -1,5 +1,5 @@
 
-switch(monkeyGetInputStatus(2))
+switch(monkeyGetInputStatus(vk_space, gp_face1))
 {
 	case MONKEY.OFF:
 		image_angle = 0;
