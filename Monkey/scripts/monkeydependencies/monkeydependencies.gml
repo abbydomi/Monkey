@@ -40,38 +40,41 @@ function monkeyGetInputKeyboard(vk_input, heldFrames) {
 }
 
 function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
-	if gamepad_button_check(gp_slot, gp_input)
+	if gp_slots[gp_slot] != -1
 	{
-		var status = MONKEY.OFF;
-		if (held < heldFrames)
+		if gamepad_button_check(gp_slots[gp_slot], gp_input)
 		{
-			status = MONKEY.PRESSED
-			held++
+			var status = MONKEY.OFF;
+			if (held < heldFrames)
+			{
+				status = MONKEY.PRESSED
+				held++
+			} 
+			else 
+			{
+				status = MONKEY.HELD
+				return status;
+			}
 		} 
 		else 
 		{
-			status = MONKEY.HELD
-			return status;
-		}
-	} 
-	else 
-	{
-		if (held > 1)
-		{
-			if (held < heldFrames)
+			if (held > 1)
+			{
+				if (held < heldFrames)
+				{
+					held = 0;
+					status = MONKEY.PRESSED
+					return status;
+				}
+			}
+			else
 			{
 				held = 0;
-				status = MONKEY.PRESSED
+				status = MONKEY.OFF
 				return status;
 			}
-		}
-		else
-		{
 			held = 0;
-			status = MONKEY.OFF
-			return status;
 		}
-		held = 0;
 	}
 
 }

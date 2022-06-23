@@ -12,11 +12,4 @@ function monkeyInit()
 		PRESSED,
 		HELD
 	}
-	enum GPSLOT
-	{
-		GP_1,
-		GP_2,
-		GP_3,
-		GP_4
-	}
 }
