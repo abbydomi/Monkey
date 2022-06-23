@@ -10,7 +10,6 @@ function monkeyGetInputKeyboard(vk_input, heldFrames) {
 		{
 			status = MONKEY.PRESSED
 			held++
-			show_debug_message(held)
 		} 
 		else 
 		{
@@ -48,7 +47,6 @@ function monkeyGetInputGamepad(gp_input, heldFrames) {
 		{
 			status = MONKEY.PRESSED
 			held++
-			show_debug_message(held)
 		} 
 		else 
 		{
