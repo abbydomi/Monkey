@@ -1,5 +1,5 @@
 monkeyInit();
 
-monkeyCreateListener(2,vk_space, gp_face1, 10);
+monkeyCreateListener(2,vk_space, gp_face1, GPSLOT.GP_1, 10);
 
 room_goto_next()

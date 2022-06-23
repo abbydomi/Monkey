@@ -39,8 +39,8 @@ function monkeyGetInputKeyboard(vk_input, heldFrames) {
 
 }
 
-function monkeyGetInputGamepad(gp_input, heldFrames) {
-	if gamepad_button_check(global.gamepad_slot, gp_input)
+function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
+	if gamepad_button_check(gp_slot, gp_input)
 	{
 		var status = MONKEY.OFF;
 		if (held < heldFrames)
