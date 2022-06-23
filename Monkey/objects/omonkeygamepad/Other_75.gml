@@ -1,16 +1,18 @@
-show_debug_message("Event = " + async_load[? "event_type"]);
-show_debug_message("Pad = " + string(async_load[? "pad_index"]));
-
 switch(async_load[? "event_type"])
 {
 	case "gamepad discovered":
-		var pad = async_load[? "pad_index"];
+		var pad = async_load[? "pad_index"]; //Recognize the gamepad
+		
+		gamepad_set_axis_deadzone(pad, 0.2) // Set the deadzone
+		gamepad_set_button_threshold(pad, 0.1) //Set the threshold for the trigger
+		
+		//This loop checks if the gamepad is set in any slot and finds the right slot to be set in
 		for(var i = 0; i < 3; i++)
 		{
 			if gp_slots[i] == -1
 			{
 				gp_slots[i] = pad;
-				show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
+				//Uncomment this line for debug messages of the gamepads and the slots //show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
 				break;
 			}
 			else if gp_slots[i] == pad
@@ -26,7 +28,7 @@ switch(async_load[? "event_type"])
 			if gp_slots[i] == pad
 			{
 				gp_slots[i] = -1
-				show_debug_message("Lost pad "+gamepad_get_description(pad)+" on slot "+string(i))
+				//Uncomment this line for debug messages of the gamepads and the slots //show_debug_message("Lost pad "+gamepad_get_description(pad)+" on slot "+string(i))
 				break;
 			}
 		}
