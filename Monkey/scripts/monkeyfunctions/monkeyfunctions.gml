@@ -1,4 +1,3 @@
-
 function monkeyGetInputStatus(ID){
 	 return monkeyList[ID].status
 }
@@ -25,7 +24,6 @@ function monkeyAddVirtualKey(ID, vkSprite, vkSpritePressed, xPos, yPos, width, h
 	monkeyList[ID].vkAlpha = alpha;
 	
 	monkeyList[ID].vkHolder = virtual_key_add(xPos, yPos, width, height, monkeyList[ID].inputType);
-	//virtual_key_show(monkeyList[ID].vkHolder)
 }
 
 function monkeyRemapKey(ID, newKeyboardKey, newGamepadKey){

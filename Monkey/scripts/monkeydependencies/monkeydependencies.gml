@@ -78,5 +78,3 @@ function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
 	}
 
 }
-
-
