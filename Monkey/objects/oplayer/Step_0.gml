@@ -1,5 +1,5 @@
 
-switch(monkeyGetInputStatus(2))
+switch(monkeyGetInputStatus(INPUTS.JUMP))
 {
 	case MONKEY.OFF:
 		image_angle = 0;

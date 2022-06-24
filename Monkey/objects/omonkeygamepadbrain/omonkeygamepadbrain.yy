@@ -30,7 +30,7 @@
     "path": "Monkey.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "oMonkeyGamepad",
+  "name": "oMonkeyGamepadBrain",
   "tags": [],
   "resourceType": "GMObject",
 }

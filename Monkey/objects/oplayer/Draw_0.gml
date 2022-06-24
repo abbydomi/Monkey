@@ -2,7 +2,7 @@ draw_self()
 
 
 
-switch(monkeyGetInputStatus(2))
+switch(monkeyGetInputStatus(INPUTS.JUMP))
 {
 	case MONKEY.OFF:
 		draw_set_color(c_gray)
