@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Monkey",
-    "path": "Monkey.yyp",
+    "name": "MONKEY",
+    "path": "folders/MONKEY.yy",
   },
   "resourceVersion": "1.0",
   "name": "oMonkeyGamepadBrain",

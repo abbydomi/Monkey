@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sDebugWall",
-    "path": "sprites/sDebugWall/sDebugWall.yy",
+    "name": "sWall",
+    "path": "sprites/sWall/sWall.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Monkey",
-    "path": "Monkey.yyp",
+    "name": "Demo objects",
+    "path": "folders/DEMO/Demo objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWall",

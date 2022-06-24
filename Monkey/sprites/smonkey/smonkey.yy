@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Monkey",
-    "path": "Monkey.yyp",
+    "name": "Demo sprites",
+    "path": "folders/DEMO/Demo sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sMonkey",

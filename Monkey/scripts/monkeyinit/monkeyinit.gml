@@ -1,6 +1,6 @@
 function monkeyInit()
 {
-	globalvar monkeyList;
+	globalvar monkeyList, monkeyQueue;
 	monkeyList[99] = 0;
 	if !instance_exists(oMonkeyGamepadBrain)
 	{

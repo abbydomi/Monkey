@@ -10,6 +10,7 @@ function monkeyCreateListener(ID, vkInput, gpInput, gpSlot, heldframes){
 		inputType: vkInput,
 		gamepadInput: gpInput
 	});
+	//if instance_exists(monkeyList[ID]) instance_destroy(monkeyList[ID]);
 	monkeyList[ID] = newMonkey;
 }
 
