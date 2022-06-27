@@ -25,6 +25,8 @@ enum INPUTS
 	P4_JUMP,
 }
 
+
+
 hsp = 0;
 vsp = 0;
 acc = 0.2;

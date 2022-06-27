@@ -6,6 +6,8 @@ monkeyCreateListener(INPUTS.P1_UP,     ord("W"), gp_padu,  0, 1);
 monkeyCreateListener(INPUTS.P1_DOWN,   ord("S"), gp_padr,  0, 1);
 monkeyCreateListener(INPUTS.P1_JUMP,   ord("W"), gp_face1, 0, 1);
 
+
+
 monkeyCreateListener(INPUTS.P2_LEFT,    vk_left, gp_padl,  1, 1);
 monkeyCreateListener(INPUTS.P2_RIGHT,  vk_right, gp_padr,  1, 1);
 monkeyCreateListener(INPUTS.P2_UP,		  vk_up, gp_padu,  1, 1);

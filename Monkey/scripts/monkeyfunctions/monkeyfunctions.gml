@@ -14,10 +14,6 @@ function monkeyCreateListener(ID, vkInput, gpInput, gpSlot, heldframes){
 	monkeyList[ID] = newMonkey;
 }
 
-
-
-monkeyRemapKey(INPUTS.P1_JUMP, vk_space, gp_face1)
-
 function monkeyAddVirtualKey(ID, vkSprite, vkSpritePressed, xPos, yPos, width, height, alpha){
 	monkeyList[ID].vkEnabled = true;
 	monkeyList[ID].vkSprite = vkSprite;
@@ -39,6 +35,14 @@ function monkeyVirtualKeyPosition(ID, xPos, yPos, width, height, alpha){
 		monkeyList[ID].vkWidth = width;
 		monkeyList[ID].vkHeight = height;
 		monkeyList[ID].vkAlpha = alpha;
+	}
+}
+
+function monkeyDeleteVirtualKey(ID){
+	if monkeyList[ID].vkEnabled
+	{
+		virtual_key_delete(monkeyList[ID].vkHolder)
+		monkeyList[ID].vkEnabled = false;
 	}
 }
 
