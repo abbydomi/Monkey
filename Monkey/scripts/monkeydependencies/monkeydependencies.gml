@@ -19,12 +19,18 @@ function monkeyGetInputKeyboard(vk_input, heldFrames) {
 	} 
 	else 
 	{
-		if (held > 1)
+		if (held > 0.9)
 		{
 			if (held < heldFrames)
 			{
 				held = 0;
 				status = MONKEY.PRESSED
+				return status;
+			}
+			else 
+			{
+				held = 0;
+				status = MONKEY.RELEASED;
 				return status;
 			}
 		}

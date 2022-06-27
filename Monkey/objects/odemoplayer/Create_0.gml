@@ -40,11 +40,7 @@ sSlide = sPlayer_slide;
 sFall = sPlayer_fall;
 sJump = sPlayer_jump;
 
-monkeyCreateListener(INPUTS.P1_LEFT,   ord("A"), gp_padl,  0, 1);
-monkeyCreateListener(INPUTS.P1_RIGHT,  ord("D"), gp_padr,  0, 1);
-monkeyCreateListener(INPUTS.P1_UP,     ord("W"), gp_padu,  0, 1);
-monkeyCreateListener(INPUTS.P1_DOWN,   ord("S"), gp_padr,  0, 1);
-monkeyCreateListener(INPUTS.P1_JUMP,   ord("W"), gp_face1, 0, 1);
+
 
 function approach(a,b,amount){
     if (a<b)

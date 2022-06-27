@@ -7,11 +7,7 @@ jmp = 6;
 hsp_max = 4;
 vsp_max = 7;
 
-monkeyCreateListener(INPUTS.P3_LEFT,    noone, gp_padl,  3, 1);
-monkeyCreateListener(INPUTS.P3_RIGHT,  noone, gp_padr,  3, 1);
-monkeyCreateListener(INPUTS.P3_UP,		  noone, gp_padu,  2, 1);
-monkeyCreateListener(INPUTS.P3_DOWN,    noone, gp_padr,  3, 1);
-monkeyCreateListener(INPUTS.P3_JUMP,	  noone, gp_face1, 3, 1);
+
 		
 sIdle = sPlayer3_idle;
 sWalk = sPlayer3_walk;

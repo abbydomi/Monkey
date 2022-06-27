@@ -32,3 +32,10 @@ function monkeyRemapKey(ID, newKeyboardKey, newGamepadKey){
 	monkeyList[ID].inputType = newKeyboardKey;
 	monkeyList[ID].gamepadInput = newGamepadKey;
 }
+
+function monkeyGetKeyboardBinding(ID){
+	return monkeyList[ID].inputType;
+}
+function monkeyGetGamepadBinding(ID){
+	return monkeyList[ID].gamepadInput;
+}

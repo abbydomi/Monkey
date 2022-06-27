@@ -10,6 +10,7 @@ function monkeyInit()
 	{
 		OFF,
 		PRESSED,
-		HELD
+		HELD,
+		RELEASED
 	}
 }
