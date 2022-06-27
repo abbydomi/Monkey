@@ -3,7 +3,7 @@ if (global.gamepad_connected) {
         global.gamepad_connected = false;
     }
 } else {
-    if (gamepad_anykey(global.gamepad_slot)) {
+    if (gamepad_anykey(gp_slots[0])) {
         global.gamepad_connected = true;
     }
 }
