@@ -23,7 +23,9 @@ switch(async_load[? "event_type"])
 			if gp_slots[i] == -1
 			{
 				gp_slots[i] = pad;
-				//Uncomment this line for debug messages of the gamepads and the slots //show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
+				//Uncomment this line for debug messages of the gamepads and the slots
+				show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
+				global.gamepad_connected = true;
 				break;
 			}
 			else if gp_slots[i] == pad
@@ -34,6 +36,10 @@ switch(async_load[? "event_type"])
 	break;
 	case "gamepad lost":
 		var pad = async_load[? "pad_index"];
+		if gp_slots[0] = pad
+		{
+			global.gamepad_connected = false;
+		}
 		for(var i = 0; i < 3; i++)
 		{
 			if gp_slots[i] == pad
