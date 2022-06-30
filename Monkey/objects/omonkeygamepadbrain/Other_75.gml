@@ -18,7 +18,7 @@ switch(async_load[? "event_type"])
 		}
 		
 		//This loop checks if the gamepad is set in any slot and finds the right slot to be set in
-		for(var i = 0; i < 3; i++)
+		for(var i = 0; i < 4; i++)
 		{
 			if gp_slots[i] == -1
 			{
