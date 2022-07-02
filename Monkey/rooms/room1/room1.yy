@@ -85,8 +85,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Monkey",
-    "path": "Monkey.yyp",
+    "name": "DEMO",
+    "path": "folders/DEMO.yy",
   },
   "resourceVersion": "1.0",
   "name": "Room1",
