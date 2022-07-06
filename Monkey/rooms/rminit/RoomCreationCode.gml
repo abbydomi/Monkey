@@ -1,4 +1,30 @@
 monkeyInit();
+enum INPUTS
+{
+	P1_LEFT,
+	P1_RIGHT,
+	P1_UP,
+	P1_DOWN,
+	P1_JUMP,
+	
+	P2_LEFT,
+	P2_RIGHT,
+	P2_UP,
+	P2_DOWN,
+	P2_JUMP,
+	
+	P3_LEFT,
+	P3_RIGHT,
+	P3_UP,
+	P3_DOWN,
+	P3_JUMP,
+	
+	P4_LEFT,
+	P4_RIGHT,
+	P4_UP,
+	P4_DOWN,
+	P4_JUMP,
+}
 
 monkeyCreateListener(INPUTS.P1_LEFT,   ord("A"), gp_padl,  0, 1);
 monkeyCreateListener(INPUTS.P1_RIGHT,  ord("D"), gp_padr,  0, 1);
