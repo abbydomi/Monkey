@@ -28,3 +28,5 @@ function approach(a,b,amount){
     }
     return a;
 }
+
+monkeyCreateMouseListener(INPUTS.P1_RIGHT, mb_left, 12)

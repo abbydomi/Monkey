@@ -1,0 +1,1 @@
+status = monkeyGetInputMouse(mb_input)

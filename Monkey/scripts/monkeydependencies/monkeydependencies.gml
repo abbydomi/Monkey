@@ -88,5 +88,46 @@ function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
 			held = 0;
 		}
 	}
+}
 
+function monkeyGetInputMouse(mb_input, heldFrames){
+	if mouse_check_button(mb_input)
+	{
+		var status = MONKEY.OFF;
+		if (held < heldFrames)
+		{
+			status = MONKEY.PRESSED
+			held++
+		} 
+		else 
+		{
+			status = MONKEY.HELD
+			return status;
+		}
+	}
+	else 
+	{
+		if (held > 0.9)
+		{
+			if (held < heldFrames)
+			{
+				held = 0;
+				status = MONKEY.PRESSED
+				return status;
+			}
+			else 
+			{
+				held = 0;
+				status = MONKEY.RELEASED;
+				return status;
+			}
+		}
+		else
+		{
+			held = 0;
+			status = MONKEY.OFF
+			return status;
+		}
+		held = 0;
+	}
 }

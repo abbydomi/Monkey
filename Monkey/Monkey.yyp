@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"key_R","path":"sprites/key_R/key_R.yy",},"order":43,},
+    {"id":{"name":"oMonkeyMouse","path":"objects/oMonkeyMouse/oMonkeyMouse.yy",},"order":5,},
     {"id":{"name":"key_F2","path":"sprites/key_F2/key_F2.yy",},"order":63,},
     {"id":{"name":"ds4_dpad","path":"sprites/ds4_dpad/ds4_dpad.yy",},"order":5,},
     {"id":{"name":"ds4_circle","path":"sprites/ds4_circle/ds4_circle.yy",},"order":4,},

@@ -22,6 +22,16 @@ function monkeyDeleteListener(ID){
 		instance_destroy(monkeyList[ID].id);
 }
 
+function monkeyCreateMouseListener(ID, mouseInput, heldframes){
+	var newMonkey = instance_create_depth( 0, 0, 0, oMonkeyMouse, {
+		status: MONKEY.OFF,
+		image_alpha: 0,
+		heldFrames: heldframes,
+		mb_input: mouseInput
+	});
+	monkeyList[ID] = newMonkey;
+}
+
 function monkeyAddVirtualKey(ID, vkSprite, vkSpritePressed, xPos, yPos, width, height, alpha){
 		monkeyList[ID].vkEnabled = true;
 		monkeyList[ID].vkSprite = vkSprite;
