@@ -1,4 +1,6 @@
-if (global.gamepad_connected) {
+if (global.gamepad_connected) 
+{
+	//Comment this statement to use gamepad AND keyboard simultaneously 
     if (keyboard_check_pressed(vk_anykey)) {
         global.gamepad_connected = false;
     }
