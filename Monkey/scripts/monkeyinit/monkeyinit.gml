@@ -1,6 +1,6 @@
 function monkeyInit(spriteEnabled)
 {
-	globalvar monkeyList, monkeyQueue, monkeySpriteEnabled;
+	globalvar monkeyList, monkeySpriteEnabled;
 	monkeySpriteEnabled = spriteEnabled;
 	monkeyList[99] = 0;
 	if !instance_exists(oMonkeyGamepadBrain)
