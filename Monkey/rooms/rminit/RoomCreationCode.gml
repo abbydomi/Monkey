@@ -1,4 +1,4 @@
-monkeyInit();
+monkeyInit(false);
 enum INPUTS
 {
 	P1_LEFT,
