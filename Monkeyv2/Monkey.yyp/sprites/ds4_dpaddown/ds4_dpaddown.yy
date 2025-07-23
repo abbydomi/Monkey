@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"ds4_dpaddown",
   "bboxMode":0,
   "bbox_bottom":15,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"key_alt2",
   "bboxMode":0,
   "bbox_bottom":8,

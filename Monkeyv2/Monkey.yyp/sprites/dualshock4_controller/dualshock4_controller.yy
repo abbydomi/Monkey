@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"dualshock4_controller",
   "bboxMode":0,
   "bbox_bottom":66,
