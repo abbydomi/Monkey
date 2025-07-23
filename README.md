@@ -1,5 +1,8 @@
 # Monkey V2
 ## Setup
+To add Monkey to your project drag and drop monkey_package.yymps to your project.
+It is recommended to import the demo and check how it works, but the DEMO folder isn't necessary for Monkey to function.
+
 To set Monkey up first call monkeyInit() as soon as the game is initialized, this function takes two parameters:
 - spriteEnabled: Enables assigning sprite to Monkeys to later draw on screen (More on this on Drawing Inputs section)
 - singleplayerEnabled: Ignores multiple controllers and treats everything as player 1
