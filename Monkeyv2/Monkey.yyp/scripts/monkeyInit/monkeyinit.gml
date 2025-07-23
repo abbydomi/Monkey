@@ -1,14 +1,14 @@
-function monkeyInit(spriteEnabled)
+function monkeyInit(spriteEnabled, multiplayerEnabled)
 {
-	globalvar monkeyList, monkeySpriteEnabled;
+	globalvar monkeyList, monkeySpriteEnabled, monkeyMultiplayerEnabled;
 	monkeySpriteEnabled = spriteEnabled;
+    monkeyMultiplayerEnabled = multiplayerEnabled
 	monkeyList[99] = 0;
-	if !instance_exists(oMonkeyGamepadBrain)
-	{
-		instance_create_depth(0,0,0,oMonkeyGamepadBrain);
+	if !instance_exists(oMonkeyGamepadBrain) {
+		instance_create_depth(0,0,0,oMonkeyGamepadBrain)
 	}
-	enum MONKEY
-	{
+    
+	enum MONKEY {
 		OFF,
 		PRESSED,
 		HELD,
