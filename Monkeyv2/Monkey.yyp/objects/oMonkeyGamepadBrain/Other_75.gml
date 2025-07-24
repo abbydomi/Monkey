@@ -9,8 +9,7 @@ switch(async_load[? "event_type"])
 		// This loop checks if the gamepad is set in any slot and finds the right slot to be set in
 		for(var i = 0; i < 4; i++)
 		{
-			if gp_slots[i] == -1
-			{
+			if gp_slots[i] == -1 {
 				gp_slots[i] = pad
 				//Uncomment this line for debug messages of the gamepads and the slots
 				show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
@@ -26,12 +25,10 @@ switch(async_load[? "event_type"])
 				{
 					global.gamepad_is_xbox[i] = false
 				}
-				gp_last = pad
+				gp_last = i
 				break
-			}
-			else if gp_slots[i] == pad
-			{
-                gp_last = pad
+			} else if gp_slots[i] == pad {
+                gp_last = i
 				break
 			}
 		}
@@ -47,6 +44,8 @@ switch(async_load[? "event_type"])
 			if gp_slots[i] == pad
 			{
 				gp_slots[i] = -1
+				gp_last = -1
+				global.gamepad_connected = false
 				// Uncomment this line for debug messages of the gamepads and the slots 
                 // show_debug_message("Lost pad "+gamepad_get_description(pad)+" on slot "+string(i))
 				break

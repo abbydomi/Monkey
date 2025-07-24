@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sDemoTileset",
   "bboxMode":0,
   "bbox_bottom":47,

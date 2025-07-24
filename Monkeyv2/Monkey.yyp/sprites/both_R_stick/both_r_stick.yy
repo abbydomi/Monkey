@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"both_R_stick",
   "bboxMode":0,
   "bbox_bottom":15,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sPlayer2_jump",
   "bboxMode":0,
   "bbox_bottom":15,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sPlayer3_slide",
   "bboxMode":0,
   "bbox_bottom":15,

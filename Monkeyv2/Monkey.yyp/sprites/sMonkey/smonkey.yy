@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sMonkey",
   "bboxMode":0,
   "bbox_bottom":31,
