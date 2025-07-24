@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"s9SliceButton",
   "bboxMode":0,
   "bbox_bottom":31,

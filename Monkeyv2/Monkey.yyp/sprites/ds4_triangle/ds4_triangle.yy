@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"ds4_triangle",
   "bboxMode":0,
   "bbox_bottom":10,

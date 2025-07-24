@@ -3,131 +3,78 @@ return (gamepad_button_check(slot, gp_face1)||gamepad_button_check(slot, gp_face
 }
 
 function monkeyGetInputKeyboard(vk_input, heldFrames) {
-	if keyboard_check(vk_input)
-	{
-		var status = MONKEY.OFF;
-		if (held < heldFrames)
-		{
+	if keyboard_check(vk_input) {
+		var status = MONKEY.OFF
+		if (held < heldFrames) {
 			status = MONKEY.PRESSED
 			held++
-		} 
-		else 
-		{
+			return status
+		} else {
 			status = MONKEY.HELD
+			return status
+		}
+	} else {
+		if (held > 0.9) {
+			held = 0;
+			status = MONKEY.RELEASED;
 			return status;
-		}
-	} 
-	else 
-	{
-		if (held > 0.9)
-		{
-			if (held < heldFrames)
-			{
-				held = 0;
-				status = MONKEY.PRESSED
-				return status;
-			}
-			else 
-			{
-				held = 0;
-				status = MONKEY.RELEASED;
-				return status;
-			}
-		}
-		else
-		{
+		} else {
 			held = 0;
 			status = MONKEY.OFF
 			return status;
 		}
-		held = 0;
 	}
 
 }
 
 function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
-	if gp_slots[gp_slot] != -1
-	{
-		if gamepad_button_check(gp_slots[gp_slot], gp_input)
-		{
+	if gp_slots[gp_slot] != -1 {
+		if gamepad_button_check(gp_slots[gp_slot], gp_input) {
 			var status = MONKEY.OFF;
-			if (held < heldFrames)
-			{
+			if (held < heldFrames) {
 				status = MONKEY.PRESSED
 				held++
-			} 
-			else 
-			{
+				return status
+			} else {
 				status = MONKEY.HELD
 				return status;
 			}
-		} 
-		else 
-		{
-			if (held > 0.9)
-			{
-				if (held < heldFrames)
-				{
-					held = 0;
-					status = MONKEY.PRESSED
-					return status;
-				}
-				else 
-				{
-					held = 0;
-					status = MONKEY.RELEASED;
-					return status;
-				}
-			}
-			else
-			{
+		} else {
+			if (held > 0.9) {
+				held = 0;
+				status = MONKEY.RELEASED;
+				return status;
+				
+			} else {
 				held = 0;
 				status = MONKEY.OFF
 				return status;
 			}
-			held = 0;
 		}
 	}
 }
 
 function monkeyGetInputMouse(mb_input, heldFrames){
-	if mouse_check_button(mb_input)
-	{
+	if mouse_check_button(mb_input) {
 		var status = MONKEY.OFF;
-		if (held < heldFrames)
-		{
+		if (held < heldFrames) {
 			status = MONKEY.PRESSED
 			held++
-		} 
-		else 
-		{
+			return status
+		} else  {
 			status = MONKEY.HELD
 			return status;
 		}
-	}
-	else 
-	{
-		if (held > 0.9)
-		{
-			if (held < heldFrames)
-			{
-				held = 0;
-				status = MONKEY.PRESSED
-				return status;
-			}
-			else 
-			{
-				held = 0;
-				status = MONKEY.RELEASED;
-				return status;
-			}
-		}
-		else
-		{
+	} else {
+		if (held > 0.9) {
+			held = 0;
+			status = MONKEY.RELEASED;
+			return status;
+			
+		} else {
 			held = 0;
 			status = MONKEY.OFF
 			return status;
 		}
-		held = 0;
 	}
 }
