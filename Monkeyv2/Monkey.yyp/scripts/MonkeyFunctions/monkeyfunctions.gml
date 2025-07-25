@@ -81,14 +81,31 @@ function monkeyGetGamepadBinding(ID){
 	return monkeyList[ID].gamepadInput;
 }
 
-function monkeyDrawInput(ID, _x, _y){
-	if global.gamepad_connected
-	{
-		draw_sprite(monkeyList[ID].gpSprite,0,_x,_y)
-	}
-	else
-	{
-		draw_sprite(monkeyList[ID].vkSprite,0,_x,_y)
+function monkeyDrawInput(ID, _x, _y, forceInputType){
+
+	switch forceInputType {
+		
+		//auto
+		case 0:
+			if global.gamepad_connected
+			{
+				draw_sprite(monkeyList[ID].gpSprite,0,_x,_y)
+			}
+			else
+			{
+				draw_sprite(monkeyList[ID].vkSprite,0,_x,_y)
+			}
+		break;
+		
+		// force controller
+		case 1:
+			draw_sprite(monkeyList[ID].gpSprite,0,_x,_y)
+		break;
+		
+		//force keyboard
+		case 2:
+			draw_sprite(monkeyList[ID].vkSprite,0,_x,_y)
+		break;
 	}
 }
 
