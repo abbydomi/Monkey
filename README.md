@@ -123,8 +123,9 @@ To draw input prompts on screen the function **monkeyDrawInput** will draw the a
 - MonkeyID: The ID of the input to draw
 - X: The X position to draw the input in
 - Y: The Y position to draw the input in
+- forceInputType: Choose whether to draw based on current input (0), or force to controller (1) or mouse (2)
 ```
-monkeyDrawInput(INPUT.P1_JUMP, 10, 10)
+monkeyDrawInput(INPUT.P1_JUMP, 10, 10, 0)
 ```
 This function will only work if **spriteEnabled** is set to true when calling **monkeyInit**
 To change the sprites associated to inputs modify the **monkeyUpdateSprites** function found in the file **MonkeyFunctions**
