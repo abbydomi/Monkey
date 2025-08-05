@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"key_J",
   "bboxMode":0,
   "bbox_bottom":8,
