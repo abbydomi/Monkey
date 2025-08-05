@@ -8,8 +8,8 @@ if global.gamepad_connected {
 // Set the last used controller
 for(var i = 0; i < 4; i++) {
     if gamepad_anykey(gp_slots[i]) {
+        global.gamepad_connected = true
         if gp_last != i {
-            global.gamepad_connected = true
             monkeyUpdateGpLast(i)
         }
     }
