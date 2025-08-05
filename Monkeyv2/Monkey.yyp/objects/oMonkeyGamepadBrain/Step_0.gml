@@ -3,19 +3,14 @@ if global.gamepad_connected {
     if keyboard_check_pressed(vk_anykey) {
         global.gamepad_connected = false
     }
-} else {
-	if monkeyMultiplayerEnabled {
-		if gamepad_anykey(gp_slots[0]) {
-			global.gamepad_connected = true
-		}
-		exit
-	}
-	
-	if gp_last == -1 {
-		exit
-	}
-	
-    if gamepad_anykey(gp_slots[gp_last]) {
-        global.gamepad_connected = true
+}
+
+for(var i = 0; i < 4; i++) {
+    if gp_last != i {
+        if gamepad_anykey(gp_slots[i]) {
+            global.gamepad_connected = true
+            gp_last = i
+            show_debug_message("Changed gp_last to slot " + string(i))
+        }
     }
 }
