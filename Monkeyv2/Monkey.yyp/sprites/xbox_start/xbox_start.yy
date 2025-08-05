@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"xbox_start",
   "bboxMode":0,
   "bbox_bottom":10,

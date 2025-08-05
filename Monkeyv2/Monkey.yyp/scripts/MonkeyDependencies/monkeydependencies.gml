@@ -1,5 +1,10 @@
 function gamepad_anykey(slot) {
     for(var i = gp_face1; i <= gp_padr; i++) {
+        if i == gp_shoulderlb{
+            if os_type == os_windows {
+                return false
+            }
+        }
         if (gamepad_button_check(slot, i)) return i;
     }
     for(var i = gp_axislh;i <= gp_axisrv; i++) {

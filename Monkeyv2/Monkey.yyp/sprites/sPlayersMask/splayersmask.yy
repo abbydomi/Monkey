@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sPlayersMask",
   "bboxMode":0,
   "bbox_bottom":15,
