@@ -7,6 +7,11 @@ function gamepad_anykey(slot) {
     }
 }
 
+function monkeyUpdateGpLast(newValue) {
+    gp_last = newValue
+    show_debug_message("Last used gamepad (gp_last) set to slot " + string(newValue))
+}
+
 function monkeyGetInputKeyboard(vk_input, heldFrames) {
 	if keyboard_check(vk_input) {
 		var status = MONKEY.OFF

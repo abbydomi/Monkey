@@ -7,47 +7,33 @@ switch(async_load[? "event_type"])
 		gamepad_set_button_threshold(pad, 0.1) // Set the threshold for the trigger
 		
 		// This loop checks if the gamepad is set in any slot and finds the right slot to be set in
-		for(var i = 0; i < 4; i++)
-		{
+		for(var i = 0; i < 4; i++) {
 			if gp_slots[i] == -1 {
 				gp_slots[i] = pad
 				//Uncomment this line for debug messages of the gamepads and the slots
-				show_debug_message("Registered pad "+gamepad_get_description(pad)+" on slot "+string(i))
+				show_debug_message("Registered pad " + gamepad_get_description(pad) + " on slot " + string(i))
 				global.gamepad_connected = true
 				
 				//Checks gamepads descriptions in search for xbox controllers 
 				//Checking the slots (0-3 || 4-11) is inconsistent in MacOS
-				if (string_pos("Xbox", gamepad_get_description(pad)) || string_pos("xbox", gamepad_get_description(pad)) || string_pos("XBOX", gamepad_get_description(pad)) ) 
-				{
+				if (string_pos("Xbox", gamepad_get_description(pad)) || string_pos("xbox", gamepad_get_description(pad)) || string_pos("XBOX", gamepad_get_description(pad))) {
 					global.gamepad_is_xbox[i] = true
-				}
-				else 
-				{
+				} else {
 					global.gamepad_is_xbox[i] = false
 				}
-				gp_last = i
-				break
-			} else if gp_slots[i] == pad {
-                gp_last = i
+				monkeyUpdateGpLast(i)
 				break
 			}
 		}
-	break;
+	break
 	case "gamepad lost":
-		var pad = async_load[? "pad_index"];
-		if gp_slots[0] = pad
-		{
-			global.gamepad_connected = false
-		}
-		for(var i = 0; i < 3; i++)
-		{
-			if gp_slots[i] == pad
-			{
+		var pad = async_load[? "pad_index"]
+		for(var i = 0; i < 4; i++) {
+			if gp_slots[i] == pad {
 				gp_slots[i] = -1
-				gp_last = -1
+				monkeyUpdateGpLast(0)
 				global.gamepad_connected = false
-				// Uncomment this line for debug messages of the gamepads and the slots 
-                // show_debug_message("Lost pad "+gamepad_get_description(pad)+" on slot "+string(i))
+                show_debug_message("Lost pad " + gamepad_get_description(pad) + " on slot " + string(i))
 				break
 			}
 		}

@@ -5,12 +5,12 @@ if global.gamepad_connected {
     }
 }
 
+// Set the last used controller
 for(var i = 0; i < 4; i++) {
-    if gp_last != i {
-        if gamepad_anykey(gp_slots[i]) {
+    if gamepad_anykey(gp_slots[i]) {
+        if gp_last != i {
             global.gamepad_connected = true
-            gp_last = i
-            show_debug_message("Changed gp_last to slot " + string(i))
+            monkeyUpdateGpLast(i)
         }
     }
 }
