@@ -100,14 +100,14 @@ function monkeyGetInputGamepad(gp_input, gp_slot, heldFrames) {
 function monkeyGetInputMouse(mb_input, heldFrames){
 	if mouse_check_button(mb_input) {
 		var status = MONKEY.OFF;
-		if (held < heldFrames) {
-			status = MONKEY.PRESSED
-			held++
-			return status
-		} else  {
-			status = MONKEY.HELD
-			return status;
-		}
+        if (held < heldFrames) {
+            status = MONKEY.PRESSED
+            held++
+            return status
+        } else {
+            status = MONKEY.HELD
+            return status;
+        }
 	} else {
 		if (held > 0.9) {
 			held = 0;

@@ -1,1 +1,1 @@
-status = monkeyGetInputMouse(mb_input)
+status = monkeyGetInputMouse(mb_input, heldFrames)
