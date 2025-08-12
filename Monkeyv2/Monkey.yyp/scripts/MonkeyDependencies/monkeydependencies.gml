@@ -1,30 +1,48 @@
-function _monkey_dependency_gamepad_anykey(slot) {
+function _monkey_dependency_gamepad_anykey(gpSlot) {
+    if gpSlot < 0 || gpSlot > 3  { exit }
+    var slot = gp_slots[gpSlot]
     for(var i = gp_face1; i <= gp_padr; i++) {
         if i == gp_shoulderlb {
-            if os_type == os_windows {
+            if _monkey_dependency_ds_l1_check(gpSlot) { 
+                _monkey_dependency_log("Controller slot " + string(gpSlot) + " anykey call has been ignored due to a DualShock/DualSense glitch with Windows")
                 return false
             }
         }
         if (gamepad_button_check(slot, i)) return i;
     }
     for(var i = gp_axislh; i <= gp_axisrv; i++) {
-        if abs(gamepad_axis_value(slot, i )) return i;
+        if abs(gamepad_axis_value(slot, i)) return i;
     }
 }
 
-function _monkey_dependency_ds_l1_check(button, slot) {
+// Returns TRUE if the input should be ignored
+function _monkey_dependency_ds_l1_check(gpSlot) {
     // Windows disconnected DualShock/DualSense L1 glitch
-    if os_type == os_windows {
-        if button == gp_shoulderlb {
-            l1Held += 1
-        }
-        return l1Held < MONKEY_L1HELDWINDOWSTHRESHOLD
+    var slot = gp_slots[gpSlot]
+    if os_type != os_windows {
+        return false
     }
+    if global.gamepad_is_xbox[gpSlot] {
+        return false
+    }
+    if gamepad_button_check(slot, gp_shoulderlb) {
+        oMonkeyGamepadBrain.l2Held[gpSlot] += 1
+        var value = oMonkeyGamepadBrain.l2Held[gpSlot] > MONKEY_l2HeldWINDOWSTHRESHOLD
+        return value
+    } else {
+        oMonkeyGamepadBrain.l2Held[gpSlot] = 0
+        return false
+    }
+}
+
+function _monkey_dependency_log(log) {
+    // TODO: if logs active
+    show_debug_message("[MONKEY] " + string(log))
 }
 
 function _monkey_dependency_update_gp_last(newValue) {
     gp_last = newValue
-    show_debug_message("Last used gamepad (gp_last) set to slot " + string(newValue))
+    _monkey_dependency_log("Last used gamepad (gp_last) set to slot " + string(newValue))
 }
 
 function monkeyGetInputKeyboard(vk_input, heldFrames) {
