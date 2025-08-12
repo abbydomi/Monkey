@@ -12,6 +12,16 @@ function _monkey_dependency_gamepad_anykey(slot) {
     }
 }
 
+function _monkey_dependency_ds_l1_check(button, slot) {
+    // Windows disconnected DualShock/DualSense L1 glitch
+    if os_type == os_windows {
+        if button == gp_shoulderlb {
+            l1Held += 1
+        }
+        return l1Held < MONKEY_L1HELDWINDOWSTHRESHOLD
+    }
+}
+
 function _monkey_dependency_update_gp_last(newValue) {
     gp_last = newValue
     show_debug_message("Last used gamepad (gp_last) set to slot " + string(newValue))

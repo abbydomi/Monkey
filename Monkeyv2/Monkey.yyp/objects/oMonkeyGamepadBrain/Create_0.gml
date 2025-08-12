@@ -11,3 +11,8 @@ gp_slots[0] = -1
 gp_slots[1] = -1
 gp_slots[2] = -1
 gp_slots[3] = -1
+
+// Disconnected DualSense/DualShock constant L1 press related code
+if os_type == os_windows {
+    l1Held = 0
+}

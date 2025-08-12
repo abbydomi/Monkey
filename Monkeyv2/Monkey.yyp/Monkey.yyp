@@ -38,6 +38,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"monkeyConstants","path":"scripts/monkeyConstants/monkeyConstants.yy",},},
     {"id":{"name":"MonkeyDependencies","path":"scripts/MonkeyDependencies/MonkeyDependencies.yy",},},
     {"id":{"name":"MonkeyFunctions","path":"scripts/MonkeyFunctions/MonkeyFunctions.yy",},},
     {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},},
