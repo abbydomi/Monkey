@@ -68,10 +68,14 @@ function monkeyDeleteVirtualKey(ID){
 }
 
 function monkeyRemapKey(ID, newKeyboardKey, newGamepadKey){
-	monkeyList[ID].vkHolder = virtual_key_add(monkeyList[ID].xPos, monkeyList[ID].yPos, monkeyList[ID].vkWidth, monkeyList[ID].vkHeight, newKeyboardKey);
+    if monkeyList[ID].vkEnabled {
+       monkeyList[ID].vkHolder = virtual_key_add(monkeyList[ID].xPos, monkeyList[ID].yPos, monkeyList[ID].vkWidth, monkeyList[ID].vkHeight, newKeyboardKey); 
+    }
 	monkeyList[ID].inputType = newKeyboardKey;
 	monkeyList[ID].gamepadInput = newGamepadKey;
-	monkeyList[ID].monkeyUpdateSprites();
+    with (monkeyList[ID]) {
+       monkeyUpdateSprites()
+    }
 }
 
 function monkeyGetKeyboardBinding(ID){
@@ -106,6 +110,7 @@ function monkeyUpdateSprites(){
 			case vk_divide: break;
 			case vk_down: vkSprite = key_arrowdown; break;
 			case vk_end: break;
+            case vk_escape: vkSprite = key_esc; break;
 			case vk_enter: vkSprite = key_enter; break;
 			case vk_f1: vkSprite = key_F1; break;
 			case vk_f2: vkSprite = key_F2; break;
@@ -287,7 +292,7 @@ function monkeyUpdateSprites(){
 				}
 				else
 				{
-					gpSprite = ds4_l2;	
+					gpSprite = ds4_r2;	
 				}break;
 			case gp_start: 
 				if global.gamepad_is_xbox[gp_slot]

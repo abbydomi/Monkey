@@ -10,6 +10,7 @@
     {"name":"oWall","order":3,"path":"objects/oWall/oWall.yy",},
     {"name":"rmInit","order":2,"path":"rooms/rmInit/rmInit.yy",},
     {"name":"Room1","order":3,"path":"rooms/Room1/Room1.yy",},
+    {"name":"monkeyConstants","order":6,"path":"scripts/monkeyConstants/monkeyConstants.yy",},
     {"name":"MonkeyFunctions","order":1,"path":"scripts/MonkeyFunctions/MonkeyFunctions.yy",},
     {"name":"monkeyInit","order":2,"path":"scripts/monkeyInit/monkeyInit.yy",},
     {"name":"both_L3","order":1,"path":"sprites/both_L3/both_L3.yy",},

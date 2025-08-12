@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyConstants",
+  "parent":{
+    "name":"MONKEY",
+    "path":"folders/MONKEY.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
