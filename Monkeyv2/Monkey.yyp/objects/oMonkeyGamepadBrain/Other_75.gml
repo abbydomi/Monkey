@@ -21,7 +21,7 @@ switch(async_load[? "event_type"])
 				} else {
 					global.gamepad_is_xbox[i] = false
 				}
-				monkeyUpdateGpLast(i)
+				_monkey_dependency_update_gp_last(i)
 				break
 			}
 		}
@@ -31,7 +31,7 @@ switch(async_load[? "event_type"])
 		for(var i = 0; i < 4; i++) {
 			if gp_slots[i] == pad {
 				gp_slots[i] = -1
-				monkeyUpdateGpLast(0)
+				_monkey_dependency_update_gp_last(0)
 				global.gamepad_connected = false
                 show_debug_message("Lost pad " + gamepad_get_description(pad) + " on slot " + string(i))
 				break

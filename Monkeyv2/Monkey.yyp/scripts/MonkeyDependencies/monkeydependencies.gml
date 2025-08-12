@@ -1,18 +1,18 @@
-function gamepad_anykey(slot) {
+function _monkey_dependency_gamepad_anykey(slot) {
     for(var i = gp_face1; i <= gp_padr; i++) {
-        if i == gp_shoulderlb{
+        if i == gp_shoulderlb {
             if os_type == os_windows {
                 return false
             }
         }
         if (gamepad_button_check(slot, i)) return i;
     }
-    for(var i = gp_axislh;i <= gp_axisrv; i++) {
+    for(var i = gp_axislh; i <= gp_axisrv; i++) {
         if abs(gamepad_axis_value(slot, i )) return i;
     }
 }
 
-function monkeyUpdateGpLast(newValue) {
+function _monkey_dependency_update_gp_last(newValue) {
     gp_last = newValue
     show_debug_message("Last used gamepad (gp_last) set to slot " + string(newValue))
 }
