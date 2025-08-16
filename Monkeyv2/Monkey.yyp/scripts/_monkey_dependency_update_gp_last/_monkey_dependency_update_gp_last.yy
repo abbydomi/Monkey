@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_monkey_dependency_update_gp_last",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_monkey_dependency_update_gp_last",
+  "parent":{
+    "name":"Dependencies",
+    "path":"folders/MONKEY/Dependencies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,3 +1,3 @@
-//monkeyDrawInput(INPUTS.P1_LEFT,100,100)
-
-draw_self();
+draw_self()
+monkeyDrawInput(INPUTS.P1_LEFT, 16, 16, 1, 1, 1, INPUT_TYPE.CONTROLLER_OTHER)
+monkeyDrawInput(INPUTS.P1_LEFT, 16, 32)
