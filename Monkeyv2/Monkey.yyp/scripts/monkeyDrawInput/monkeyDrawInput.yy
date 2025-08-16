@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyDrawInput",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyDrawInput",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/MONKEY/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

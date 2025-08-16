@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_monkey_dependency_get_gamepad_sprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_monkey_dependency_get_gamepad_sprite",
+  "parent":{
+    "name":"Dependencies",
+    "path":"folders/MONKEY/Dependencies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
