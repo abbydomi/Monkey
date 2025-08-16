@@ -3,12 +3,11 @@
 To add Monkey to your project drag and drop monkey_package.yymps to your project.
 It is recommended to import the demo and check how it works, but the DEMO folder isn't necessary for Monkey to function.
 
-To set Monkey up first call monkeyInit() as soon as the game is initialized, this function takes two parameters:
-- spriteEnabled: Enables assigning sprite to Monkeys to later draw on screen (More on this on Drawing Inputs section)
+To set Monkey up first call monkeyInit() as soon as the game is initialized, this function takes one parameters:
 - singleplayerEnabled: Ignores multiple controllers and treats everything as player 1
 Example:
 ```
-monkeyInit(false, true)
+monkeyInit(true)
 ```
 After initializing Monkey you can declare your inputs using the **monkeyCreateListener** function, this function takes the following parameters:
 - ID: The numeric ID for the Monkey
@@ -106,7 +105,7 @@ Once a virtual key is set up it will appear on the screen of the game, to modify
 - ID: The ID of the Monkey to modify
 - X: The X position for the virtual key on screen
 - Y: The Y position for the virtual key on screen
-- Wdith: The width of the virtual key
+- Width: The width of the virtual key
 - Height: The height of the virtual key
 - Alpha: Floating point number from 0 to 1, indicates how opaque the virtual key is
 ```
@@ -119,15 +118,19 @@ monkeyVirtualKeyPosition(
 Virtual keys can also be deleted by calling **monkeyDeleteVirtualKey** which takes the ID of the Monkey as an argument.
 
 ## Drawing Inputs
-To draw input prompts on screen the function **monkeyDrawInput** will draw the associated sprite to the Monkey passed to it, this function takes 3 arguments:
-- MonkeyID: The ID of the input to draw
+To draw input prompts on screen the function **monkeyDrawInput** will draw the associated sprite to the Monkey passed to it, this function takes the following arguments:
+- Monkey ID: The ID of the input to draw
 - X: The X position to draw the input in
 - Y: The Y position to draw the input in
+- xScale (optional) Horizontal scale (default = 1)
+- yScale (optional) Vertical scale (default = 1)
+- opacity (optional) Alpha (default = 1)
+- inputType (optional) INPUT_TYPE Enum value (default = autodetect) This can be set to force a specific controller/keyboard/touchscreen
 ```
-monkeyDrawInput(INPUT.P1_JUMP, 10, 10)
+monkeyDrawInput(INPUTS.P1_LEFT, 16, 16, 1, 1, 1, INPUT_TYPE.CONTROLLER_XBOX)
+monkeyDrawInput(INPUTS.P1_LEFT, 16, 32)
 ```
-This function will only work if **spriteEnabled** is set to true when calling **monkeyInit**
-To change the sprites associated to inputs modify the **monkeyUpdateSprites** function found in the file **MonkeyFunctions**
+To change the sprites associated to inputs modify the ds_maps found in the file **_monkey_dependency_init_input_sprites**
 
 ## Credits
 Monkey is an instance based input library built by [abbytorade](https://bsky.app/profile/abbytorade.bsky.social) for [Oxonian Games](https://oxoniangames.itch.io)
