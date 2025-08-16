@@ -26,7 +26,6 @@ function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
     switch _inputType {
         case INPUT_TYPE.CONTROLLER_XBOX: case INPUT_TYPE.CONTROLLER_OTHER:
             sprite = _monkey_dependency_get_sprite(inputGamepad, _inputType)
-            show_debug_message(sprite)
         break
         case INPUT_TYPE.KEYBOARD:
             sprite = _monkey_dependency_get_sprite(inputKeyboard, _inputType)
@@ -56,6 +55,5 @@ function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
         _monkey_dependency_log("monkeyDrawInput failed! The Monkey returned an empty sprite")
         return
     }
-    show_debug_message(_xscale)
     draw_sprite_ext(sprite, 0, _x, _y, _xscale, _yscale, 0, c_white, _alpha)
 }
