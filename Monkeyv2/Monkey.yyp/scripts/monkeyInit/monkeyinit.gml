@@ -1,4 +1,4 @@
-function monkeyInit(spriteEnabled, multiplayerEnabled) {
+function monkeyInit(multiplayerEnabled) {
 	globalvar monkeyList, monkeyMultiplayerEnabled;
     monkeyMultiplayerEnabled = multiplayerEnabled
 	monkeyList[99] = 0

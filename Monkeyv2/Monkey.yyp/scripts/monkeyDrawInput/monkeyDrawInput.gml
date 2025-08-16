@@ -8,10 +8,10 @@
 /// @param opacity    (optional) Alpha (default = 1)
 /// @param inputType  (optional) INPUT_TYPE Enum value (default = auto-detect)
 function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
-    var _xscale    = (argument_count > 3) ? xScale : 1
-    var _yscale    = (argument_count > 4) ? yScale : 1
-    var _alpha     = (argument_count > 5) ? opacity : 1
-    var _inputType = (argument_count > 6) ? inputType : -1
+    var _xscale    = (xScale    != undefined) ? xScale : 1
+    var _yscale    = (yScale    != undefined) ? yScale : 1
+    var _alpha     = (opacity   != undefined) ? opacity : 1
+    var _inputType = (inputType != undefined) ? inputType : -1
     
     if !instance_exists(monkeyList[ID]) {
         _monkey_dependency_log("monkeyDrawInput failed! The Monkey does not exist!")
@@ -56,6 +56,6 @@ function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
         _monkey_dependency_log("monkeyDrawInput failed! The Monkey returned an empty sprite")
         return
     }
-    
+    show_debug_message(_xscale)
     draw_sprite_ext(sprite, 0, _x, _y, _xscale, _yscale, 0, c_white, _alpha)
 }
