@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"monkeyDrawInput",
   "parent":{
-    "name":"Functions",
-    "path":"folders/MONKEY/Functions.yy",
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

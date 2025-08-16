@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyGetGamepadBinding",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyGetGamepadBinding",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"MonkeyFunctions",
+  "%Name":"monkeyRemapKey",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"MonkeyFunctions",
+  "name":"monkeyRemapKey",
   "parent":{
-    "name":"MONKEY",
-    "path":"folders/MONKEY.yy",
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyGetInputStatus",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyGetInputStatus",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

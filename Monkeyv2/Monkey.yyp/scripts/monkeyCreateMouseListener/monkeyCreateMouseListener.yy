@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyCreateMouseListener",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyCreateMouseListener",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

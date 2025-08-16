@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyDeleteListener",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyDeleteListener",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

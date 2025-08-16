@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"monkeyGetKeyboardBinding",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"monkeyGetKeyboardBinding",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/MONKEY/Functions/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
