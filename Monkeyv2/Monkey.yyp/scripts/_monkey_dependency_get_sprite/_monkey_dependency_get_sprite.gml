@@ -6,13 +6,10 @@
 function _monkey_dependency_get_sprite(input, inputType) {
     switch inputType {
         case INPUT_TYPE.CONTROLLER_XBOX:
-            _monkey_dependency_get_gamepad_sprite(input, true)
-        break
-        case INPUT_TYPE.CONTROLLER_OTHER:
-            _monkey_dependency_get_gamepad_sprite(input, false)
-        break
-        case INPUT_TYPE.KEYBOARD:
-            _monkey_dependency_get_keyboard_sprite(input)
-        break
+           return  _monkey_dependency_get_gamepad_sprite(input, true)
+        case INPUT_TYPE.CONTROLLER_OTHER: 
+            return _monkey_dependency_get_gamepad_sprite(input, false)
+        case INPUT_TYPE.KEYBOARD: 
+            return _monkey_dependency_get_keyboard_sprite(input)
     }
 }
