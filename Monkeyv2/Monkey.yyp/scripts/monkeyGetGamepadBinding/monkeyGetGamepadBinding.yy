@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"monkeyGetGamepadBinding",
   "parent":{
-    "name":"Listeners",
-    "path":"folders/MONKEY/Functions/Listeners.yy",
+    "name":"Functions",
+    "path":"folders/MONKEY/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
