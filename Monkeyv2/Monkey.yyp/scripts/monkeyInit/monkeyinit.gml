@@ -1,3 +1,5 @@
+/// @desc Initializes Monkey
+/// @param {Bool} multiplayerEnabled Whether gpSlots will be used for different players or all for Player 1
 function monkeyInit(multiplayerEnabled) {
 	globalvar monkeyList, monkeyMultiplayerEnabled;
     monkeyMultiplayerEnabled = multiplayerEnabled
