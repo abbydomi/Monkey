@@ -1,3 +1,12 @@
+/// @desc Adds a virtual key for touchscreen devices to press inputs managed by Monkey
+/// @param {Real} ID The ID of the Monkey to add the virtual key to
+/// @param {Asset.GMSprite} vkSprite The sprite of the button on screen
+/// @param {Asset.GMSprite} vkSpritePressed The sprite of the button on screen while pressed
+/// @param {Real} xPos The X position for the virtual key
+/// @param {Real} yPos The Y position for the virtual key
+/// @param {Real} width The width of the virtual key
+/// @param {Real} height The height of the virtual key
+/// @param {Real} alpha The opacity of the virtual key
 function monkeyAddVirtualKey(ID, vkSprite, vkSpritePressed, xPos, yPos, width, height, alpha) {
 		monkeyList[ID].vkEnabled = true
 		monkeyList[ID].vkSprite = vkSprite
