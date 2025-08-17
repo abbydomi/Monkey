@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"gamepad",
-    "path":"folders/PROMPT_SPRITES/gamepad.yy",
+    "path":"folders/MONKEY/Dependencies/PROMPT_SPRITES/gamepad.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

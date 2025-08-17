@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"monkeyInit",
   "parent":{
-    "name":"MONKEY",
-    "path":"folders/MONKEY.yy",
+    "name":"Functions",
+    "path":"folders/MONKEY/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

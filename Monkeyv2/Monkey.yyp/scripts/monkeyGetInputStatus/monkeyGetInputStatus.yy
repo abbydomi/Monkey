@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"MonkeyFunctions",
+  "%Name":"monkeyGetInputStatus",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"MonkeyFunctions",
+  "name":"monkeyGetInputStatus",
   "parent":{
-    "name":"MONKEY",
-    "path":"folders/MONKEY.yy",
+    "name":"Functions",
+    "path":"folders/MONKEY/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
