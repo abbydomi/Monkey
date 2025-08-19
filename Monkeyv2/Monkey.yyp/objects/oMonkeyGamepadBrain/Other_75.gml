@@ -10,18 +10,29 @@ switch(async_load[? "event_type"])
 		for(var i = 0; i < 4; i++) {
 			if gp_slots[i] == -1 {
 				gp_slots[i] = pad
-                _monkey_dependency_log("Registered pad " + gamepad_get_description(i) + " on slot " + string(i))
+                var description = gamepad_get_description(i)
+                _monkey_dependency_log("Registered pad " + description + " on slot " + string(i))
 				global.gamepad_connected = true
 				
-				//Checks gamepads descriptions in search for xbox controllers 
-				//Checking the slots (0-3 || 4-11) is inconsistent in MacOS
-				if (string_pos("Xbox", gamepad_get_description(pad)) || string_pos("xbox", gamepad_get_description(pad)) || string_pos("XBOX", gamepad_get_description(pad))) {
-					global.gamepad_is_xbox[i] = true
-                    _monkey_dependency_log("Gamepad slot " + string(i) + " (" + gamepad_get_description(i) + ")" + " set as Xbox Gamepad")
-				} else {
-					global.gamepad_is_xbox[i] = false
-                    _monkey_dependency_log("Gamepad slot " + string(i) + " (" + gamepad_get_description(i) + ")" + " set as Non-Xbox Gamepad")
-				}
+				// Checks gamepads descriptions in search for xbox controllers 
+                if description != "" {
+    				if string_pos("xbox", string_lower(description)) {
+    					global.gamepad_is_xbox[i] = true
+                        _monkey_dependency_log("Gamepad slot " + string(i) + " (" + gamepad_get_description(i) + ")" + " set as Xbox Gamepad")
+    				} else {
+    					global.gamepad_is_xbox[i] = false
+                        _monkey_dependency_log("Gamepad slot " + string(i) + " (" + gamepad_get_description(i) + ")" + " set as Non-Xbox Gamepad")
+    				}
+                } else {
+                    // Fallback: assume slots 0-3 are Xbox controllers
+                    if pad <= 3 {
+                        _monkey_dependency_log("Gamepad slot " + string(i) + " returned no description, it was assumed to be an Xbox Gamepad")
+                        global.gamepad_is_xbox[i] = true
+                    } else {
+                        _monkey_dependency_log("Gamepad slot " + string(i) + " returned no description, it was assumed to be an Non-Xbox Gamepad")
+                        global.gamepad_is_xbox[i] = false
+                    }
+                }
 				_monkey_dependency_update_gp_last(i)
 				break
 			}
