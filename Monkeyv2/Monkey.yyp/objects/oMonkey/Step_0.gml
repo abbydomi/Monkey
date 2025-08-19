@@ -1,9 +1,9 @@
 if global.gamepad_connected {
     if monkeyMultiplayerEnabled {
-	    status = monkeyGetInputGamepad(gamepadInput, gp_slot, heldFrames)
+	    status = _monkey_dependency_get_input_gamepad(gamepadInput, gp_slot, heldFrames)
         exit
     }
-    status = monkeyGetInputGamepad(gamepadInput, gp_last, heldFrames)
+    status = _monkey_dependency_get_input_gamepad(gamepadInput, gp_last, heldFrames)
 } else {
-	status = monkeyGetInputKeyboard(inputType, heldFrames)
+	status = _monkey_dependency_get_input_keyboard(inputType, heldFrames)
 }

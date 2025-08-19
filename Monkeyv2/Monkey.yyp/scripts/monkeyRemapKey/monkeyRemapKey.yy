@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"MonkeyDependencies",
+  "%Name":"monkeyRemapKey",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"MonkeyDependencies",
+  "name":"monkeyRemapKey",
   "parent":{
-    "name":"MONKEY",
-    "path":"folders/MONKEY.yy",
+    "name":"Bindings",
+    "path":"folders/MONKEY/Functions/Bindings.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"keyboard",
-    "path":"folders/PROMPT_SPRITES/keyboard.yy",
+    "path":"folders/MONKEY/Dependencies/PROMPT_SPRITES/keyboard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"MONKEY",
-    "path":"folders/MONKEY.yy",
+    "name":"PROMPT_SPRITES",
+    "path":"folders/MONKEY/Dependencies/PROMPT_SPRITES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
