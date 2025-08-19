@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"sPlayer4_fall",
   "bboxMode":0,
   "bbox_bottom":14,

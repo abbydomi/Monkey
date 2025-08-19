@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v1",
+  "$GMSprite":"",
   "%Name":"ds4_dpadright",
   "bboxMode":0,
   "bbox_bottom":15,

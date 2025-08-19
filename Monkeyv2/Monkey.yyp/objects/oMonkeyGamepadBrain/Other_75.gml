@@ -16,7 +16,7 @@ switch(async_load[? "event_type"])
 				
 				// Checks gamepads descriptions in search for xbox controllers 
                 if description != "" {
-    				if string_pos("xbox", string_lower(description)) {
+    				if string_pos("xbox", string_lower(description)) || string_pos("xinput", string_lower(description)) {
     					global.gamepad_is_xbox[i] = true
                         _monkey_dependency_log("Gamepad slot " + string(i) + " (" + gamepad_get_description(i) + ")" + " set as Xbox Gamepad")
     				} else {
