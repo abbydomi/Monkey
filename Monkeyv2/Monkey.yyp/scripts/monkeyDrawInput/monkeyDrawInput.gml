@@ -42,7 +42,7 @@ function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
         var automaticType = INPUT_TYPE.CONTROLLER_XBOX
         if global.gamepad_connected {
             var slot = monkeyMultiplayerEnabled ? gp_last : monkeyList[ID].gp_slot
-            automaticType = global.gamepad_is_xbox ? INPUT_TYPE.CONTROLLER_XBOX : INPUT_TYPE.CONTROLLER_OTHER
+            automaticType = global.gamepad_is_xbox[slot] ? INPUT_TYPE.CONTROLLER_XBOX : INPUT_TYPE.CONTROLLER_OTHER
             sprite = _monkey_dependency_get_sprite(inputGamepad, automaticType)
         } else {
             automaticType = INPUT_TYPE.KEYBOARD
