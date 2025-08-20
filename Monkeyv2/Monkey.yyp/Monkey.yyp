@@ -65,6 +65,7 @@
     {"id":{"name":"monkeyGetGamepadBinding","path":"scripts/monkeyGetGamepadBinding/monkeyGetGamepadBinding.yy",},},
     {"id":{"name":"monkeyGetInputStatus","path":"scripts/monkeyGetInputStatus/monkeyGetInputStatus.yy",},},
     {"id":{"name":"monkeyGetKeyboardBinding","path":"scripts/monkeyGetKeyboardBinding/monkeyGetKeyboardBinding.yy",},},
+    {"id":{"name":"monkeyGetSprite","path":"scripts/monkeyGetSprite/monkeyGetSprite.yy",},},
     {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},},
     {"id":{"name":"monkeyRemapKey","path":"scripts/monkeyRemapKey/monkeyRemapKey.yy",},},
     {"id":{"name":"monkeyVirtualKeyPosition","path":"scripts/monkeyVirtualKeyPosition/monkeyVirtualKeyPosition.yy",},},
