@@ -36,6 +36,7 @@
     {"name":"monkeyDrawInput","order":3,"path":"scripts/monkeyDrawInput/monkeyDrawInput.yy",},
     {"name":"monkeyGetInputStatus","order":5,"path":"scripts/monkeyGetInputStatus/monkeyGetInputStatus.yy",},
     {"name":"monkeyGetKeyboardBinding","order":1,"path":"scripts/monkeyGetKeyboardBinding/monkeyGetKeyboardBinding.yy",},
+    {"name":"monkeyGetSprite","order":9,"path":"scripts/monkeyGetSprite/monkeyGetSprite.yy",},
     {"name":"monkeyRemapKey","order":2,"path":"scripts/monkeyRemapKey/monkeyRemapKey.yy",},
     {"name":"monkeyVirtualKeyPosition","order":1,"path":"scripts/monkeyVirtualKeyPosition/monkeyVirtualKeyPosition.yy",},
     {"name":"both_L3","order":1,"path":"sprites/both_L3/both_L3.yy",},

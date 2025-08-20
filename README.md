@@ -132,6 +132,16 @@ monkeyDrawInput(INPUTS.P1_LEFT, 16, 32)
 ```
 To change the sprites associated to inputs modify the ds_maps found in the file **_monkey_dependency_init_input_sprites**
 
+## Getting Sprite resources
+In case you need the sprite itself that is being drawin with **monkeyDrawInput**, you can call the function **monkeyGetSprite** which is used by the previous function as well.
+Thi function takes the following arguments:
+- Monkey ID: The ID of the input to get sprite of 
+- inputType (optional) INPUT_TYPE Enum value (default = autodetect) This can be set to force a specific controller/keyboard/touchscreen
+```
+var monkeySprite = monkeyDrawInput(INPUTS.P1_LEFT, INPUT_TYPE.CONTROLLER_XBOX)
+var monkeySpriteKeyboard = monkeyDrawInput(INPUTS.P1_LEFT, INPUT_TYPE.KEYBOARD)
+```
+
 ## Credits
 Monkey is an instance based input library built by [abbytorade](https://bsky.app/profile/abbytorade.bsky.social) for [Oxonian Games](https://oxoniangames.itch.io)
 The included sprites are from [abbytorade's 1bit controller asset pack](https://abbytorade.itch.io/1bitcontrollers)

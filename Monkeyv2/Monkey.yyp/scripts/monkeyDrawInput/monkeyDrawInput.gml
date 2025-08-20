@@ -13,47 +13,7 @@ function monkeyDrawInput(ID, _x, _y, xScale, yScale, opacity, inputType) {
     var _alpha     = (opacity   != undefined) ? opacity : 1
     var _inputType = (inputType != undefined) ? inputType : -1
     
-    if !instance_exists(monkeyList[ID]) {
-        _monkey_dependency_log("monkeyDrawInput failed! The Monkey does not exist!")
-        return
-    }
-    var inputKeyboard = monkeyList[ID].inputType
-    var inputGamepad  = monkeyList[ID].gamepadInput
-    var vkSprite = sEmpty
-    var gpSprite = sEmpty
-    var sprite  = sEmpty
+    var sprite = monkeyGetSprite(ID, inputType)
     
-    switch _inputType {
-        case INPUT_TYPE.CONTROLLER_XBOX: case INPUT_TYPE.CONTROLLER_OTHER:
-            sprite = _monkey_dependency_get_sprite(inputGamepad, _inputType)
-        break
-        case INPUT_TYPE.KEYBOARD:
-            sprite = _monkey_dependency_get_sprite(inputKeyboard, _inputType)
-        break
-        case INPUT_TYPE.TOUCHSCREEN:
-            if monkeyList[ID].status == MONKEY.OFF {
-                sprite = monkeyList[ID].vkSprite
-            } else {
-                sprite = monkeyList[ID].vkSpritePressed
-            }
-        break
-        default: 
-        // Auto pick
-        var automaticType = INPUT_TYPE.CONTROLLER_XBOX
-        if global.gamepad_connected {
-            var slot = monkeyMultiplayerEnabled ? gp_last : monkeyList[ID].gp_slot
-            automaticType = global.gamepad_is_xbox[slot] ? INPUT_TYPE.CONTROLLER_XBOX : INPUT_TYPE.CONTROLLER_OTHER
-            sprite = _monkey_dependency_get_sprite(inputGamepad, automaticType)
-        } else {
-            automaticType = INPUT_TYPE.KEYBOARD
-            sprite = _monkey_dependency_get_sprite(inputKeyboard, automaticType)
-        }
-        break
-    }
-    
-    if sprite == sEmpty || sprite == noone || sprite == undefined {
-        _monkey_dependency_log("monkeyDrawInput failed! The Monkey returned an empty sprite")
-        return
-    }
     draw_sprite_ext(sprite, 0, _x, _y, _xscale, _yscale, 0, c_white, _alpha)
 }
