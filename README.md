@@ -83,6 +83,15 @@ if gamepad_axis_value(gp_slots[gp_last], gp_axislh) < -0.5 {
   hsp += acc
 }
 ```
+## Changing the assgined controller
+By default Monkey will try to assign whether a controller is an xbox controller or a dualshock/dualsense, this can be overwritten with the function **monkeySetControllerType()**. This function takes in 2 arguments:
+- slot: The slot of the controller to set
+- type: The inputType of the slot (INPUT_TYPE.CONTROLLER_XBOX or INPUT_TYPE.CONTROLLER_OTHER)
+Example:
+```
+monkeySetControllerType(0, INPUT_TYPE.CONTROLLER_OTHER)
+```
+monkeyDeleteListener(INPUT.P1_JUMP)
 ## Virtual Keys for Touchscreen devices
 Virtual keys can be added on screen for touchscreen devices, these are associated to an already existing MonkeyListener, they can be created by calling **monkeyAddVirtualKey**. This function takes the following arguments:
 - ID: The ID of the Monkey to add a virtual key to

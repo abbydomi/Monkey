@@ -38,6 +38,7 @@
     {"name":"monkeyGetKeyboardBinding","order":1,"path":"scripts/monkeyGetKeyboardBinding/monkeyGetKeyboardBinding.yy",},
     {"name":"monkeyGetSprite","order":9,"path":"scripts/monkeyGetSprite/monkeyGetSprite.yy",},
     {"name":"monkeyRemapKey","order":2,"path":"scripts/monkeyRemapKey/monkeyRemapKey.yy",},
+    {"name":"monkeySetControllerType","order":10,"path":"scripts/monkeySetControllerType/monkeySetControllerType.yy",},
     {"name":"monkeyVirtualKeyPosition","order":1,"path":"scripts/monkeyVirtualKeyPosition/monkeyVirtualKeyPosition.yy",},
     {"name":"both_L3","order":1,"path":"sprites/both_L3/both_L3.yy",},
     {"name":"both_R_stick","order":2,"path":"sprites/both_R_stick/both_R_stick.yy",},

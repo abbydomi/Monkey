@@ -68,6 +68,7 @@
     {"id":{"name":"monkeyGetSprite","path":"scripts/monkeyGetSprite/monkeyGetSprite.yy",},},
     {"id":{"name":"monkeyInit","path":"scripts/monkeyInit/monkeyInit.yy",},},
     {"id":{"name":"monkeyRemapKey","path":"scripts/monkeyRemapKey/monkeyRemapKey.yy",},},
+    {"id":{"name":"monkeySetControllerType","path":"scripts/monkeySetControllerType/monkeySetControllerType.yy",},},
     {"id":{"name":"monkeyVirtualKeyPosition","path":"scripts/monkeyVirtualKeyPosition/monkeyVirtualKeyPosition.yy",},},
     {"id":{"name":"both_L_stick","path":"sprites/both_L_stick/both_L_stick.yy",},},
     {"id":{"name":"both_L3","path":"sprites/both_L3/both_L3.yy",},},
