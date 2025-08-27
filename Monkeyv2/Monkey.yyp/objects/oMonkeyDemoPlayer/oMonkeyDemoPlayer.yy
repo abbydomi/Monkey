@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oDemoPlayer3",
+  "%Name":"oMonkeyDemoPlayer",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oDemoPlayer3",
+  "name":"oMonkeyDemoPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Demo objects",
-    "path":"folders/DEMO/Demo objects.yy",
+    "name":"Objects",
+    "path":"folders/DEMO3/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,19 +27,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"playerNo","filters":[],"listItems":[],"multiselect":false,"name":"playerNo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayer3_idle",
-    "path":"sprites/sPlayer3_idle/sPlayer3_idle.yy",
+    "name":"sP1IDLE",
+    "path":"sprites/sP1IDLE/sP1IDLE.yy",
   },
-  "spriteMaskId":{
-    "name":"sPLAYERMASK",
-    "path":"sprites/sPLAYERMASK/sPLAYERMASK.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

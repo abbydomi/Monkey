@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oMonkeyDemoWall",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oMonkeyDemoWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Demo objects",
-    "path":"folders/DEMO/Demo objects.yy",
+    "name":"Objects",
+    "path":"folders/DEMO3/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sWALL",
+    "path":"sprites/sWALL/sWALL.yy",
   },
   "spriteMaskId":null,
   "visible":false,

@@ -39,8 +39,8 @@
     "path":"sprites/sPlayer_idle/sPlayer_idle.yy",
   },
   "spriteMaskId":{
-    "name":"sPlayersMask",
-    "path":"sprites/sPlayersMask/sPlayersMask.yy",
+    "name":"sPLAYERMASK",
+    "path":"sprites/sPLAYERMASK/sPLAYERMASK.yy",
   },
   "visible":true,
 }
