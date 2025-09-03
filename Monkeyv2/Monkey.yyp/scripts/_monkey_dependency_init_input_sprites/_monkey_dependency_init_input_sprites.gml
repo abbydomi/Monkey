@@ -40,6 +40,7 @@ function _monkey_dependency_init_input_sprites() {
     global._monkey_vk_sprites[? vk_alt]       = key_alt
     global._monkey_vk_sprites[? vk_backspace] = key_backspace
     global._monkey_vk_sprites[? vk_control]   = key_ctrl
+    global._monkey_vk_sprites[? vk_shift]     = key_shift
     global._monkey_vk_sprites[? vk_delete]    = key_backspace
     global._monkey_vk_sprites[? vk_down]      = key_arrowdown
     global._monkey_vk_sprites[? vk_end]       = key_enter
